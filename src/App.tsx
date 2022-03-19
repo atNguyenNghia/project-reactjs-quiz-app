@@ -39,6 +39,7 @@ const App = () => {
     setNumber(0);
     setLoading(false);
   }
+
   const checkAnswer = (e:React.MouseEvent<HTMLButtonElement>) => {
     if(!gameOver){
       // user 
@@ -57,6 +58,7 @@ const App = () => {
       setUserAnswers((prev) => [...prev , answerObject]);
     }
   }
+
   const nextQuestion = () => {
     //  move on to the next question 
     const nextQuestion = number + 1;
@@ -67,6 +69,7 @@ const App = () => {
       setNumber(nextQuestion);
     }
   }
+  
   return (
     <>
     <GlobalStyle/>
